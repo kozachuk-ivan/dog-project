@@ -503,7 +503,7 @@ body {
   display: inline-block;
 }
 .header__like {
-  z-index: 1;
+  z-index: 10;
   position: relative;
 }
 .header__like::before {
@@ -516,7 +516,7 @@ body {
   background-size: cover;
   width: 107%;
   height: 142%;
-  z-index: 2;
+  z-index: -1;
 }
 .header__desk {
   font-size: clamp(17px, 2vw, 20px);
