@@ -1,0 +1,142 @@
+@media (max-width: 915px) {
+  .header {
+    &__list {
+      gap: 1.5625em;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    position: relative;
+
+    &__nav {
+      display: none;
+    }
+    &__nav_open {
+      display: block;
+      position: absolute;
+      top: 10.5%;
+      right: 2.5%;
+      background-color: #fff;
+      color: #000;
+      border-radius: 16px;
+      border: solid #4e2c2b;
+      padding: 4.5%;
+    }
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5em;
+      margin-top: 23%;
+    }
+    &__btn-menu {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      & .header__line {
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        border-radius: 2px;
+        left: 0;
+        bottom: 0;
+        transition: 0.3s;
+        background-color: #fff;
+      }
+    }
+    &__line:nth-of-type(1) {
+      top: 0;
+    }
+    &__line:nth-of-type(2) {
+      top: 9px;
+    }
+    &__line:nth-of-type(3) {
+      top: 18px;
+    }
+    &__btn-menu_open &__line:nth-of-type(1) {
+      top: 9px;
+      transform: rotate(45deg);
+    }
+    &__btn-menu_open &__line:nth-of-type(2) {
+      display: none;
+    }
+    &__btn-menu_open &__line:nth-of-type(3) {
+      top: 9px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+@media (max-width: 602px) {
+  .header {
+    &__logo {
+      padding-right: 13.5%;
+      padding-bottom: 13.5%;
+    }
+    &__desk {
+      display: none;
+    }
+    &__desk-mobile {
+      display: block;
+    }
+  }
+}
+@media (max-width: 535px) {
+  .header {
+    &__nav_open {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: -1%;
+      left: 0;
+      background-color: #fff;
+      color: #000;
+      border-radius: 0;
+      border: none;
+      & .header__logo-mobile {
+        display: block;
+        position: relative;
+        object-fit: cover;
+        padding-bottom: 20.61%;
+        & img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 20.61%;
+          height: 100%;
+        }
+      }
+    }
+
+    &__list {
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5em;
+    }
+    &__button-mobile {
+      display: block;
+      font-size: clamp(13px, 2vw, 16px);
+      margin-top: 28%;
+      &:hover {
+        border: solid #961914;
+      }
+    }
+    &__item {
+      font-weight: 600;
+      font-size: 24px;
+    }
+    &__btn-menu_open &__line {
+      background-color: #000;
+    }
+    &__title_open {
+      display: none;
+    }
+    &__like_open {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

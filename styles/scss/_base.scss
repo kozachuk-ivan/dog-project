@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: $font-family;
+  font-size: clamp(13px, 3vw, 16px);
+  font-weight: 400;
+  line-height: 140%;
+  color: #fff;
+  background-color: #fff;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1230px;
+}
