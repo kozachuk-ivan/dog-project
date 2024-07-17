@@ -164,7 +164,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted; /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -263,9 +263,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -273,9 +273,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -284,9 +284,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -330,8 +330,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -339,8 +339,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -348,7 +348,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -356,7 +356,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -447,7 +447,7 @@ body {
 .header__logo {
   position: relative;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   padding-right: 7%;
   padding-bottom: 7%;
 }
@@ -644,7 +644,7 @@ body {
     display: block;
     position: relative;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     padding-bottom: 20.61%;
   }
   .header__nav_open .header__logo-mobile img {
@@ -681,4 +681,266 @@ body {
   .header__like_open::before {
     display: none;
   }
-} /*# sourceMappingURL=style.css.map */
+}
+.footer {
+  position: relative;
+  display: flex;
+  background-color: #961914;
+  margin-top: 90px;
+  padding-top: 80px;
+}
+.footer__first-wrap {
+  margin-left: 10%;
+  margin-right: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__title {
+  font-weight: 700;
+  font-size: clamp(40px, 4vw, 46px);
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 35px;
+}
+.footer__text {
+  font-size: 16px;
+  max-width: 303px;
+  margin-bottom: 20px;
+}
+.footer__tell {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.footer__btn {
+  align-items: center;
+  display: flex;
+  gap: 8.5px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 11px 15px;
+  margin-top: 16px;
+}
+.footer__btn:nth-of-type(2) {
+  padding: 12px 25.5px 12.5px 15px;
+}
+.footer__hgroup {
+  margin-bottom: 40px;
+}
+.footer__link {
+  position: relative;
+}
+.footer__link::before {
+  content: "";
+  position: absolute;
+  width: 95.5%;
+  height: 1px;
+  background-color: #fff;
+  bottom: -1px;
+}
+.footer__svg-first-wrap {
+  position: absolute;
+  left: 0%;
+  top: 19%;
+}
+.footer__svg-second-wrap {
+  position: absolute;
+  top: 35%;
+  left: 28.5%;
+}
+.footer__svg-thirds-wrap {
+  position: absolute;
+  top: 35.9%;
+  left: 27%;
+}
+.footer__svg-fors-wrap {
+  position: absolute;
+  top: 37.6%;
+  left: 25.5%;
+}
+.footer__svg-wrap-first {
+  position: absolute;
+  top: 10%;
+  left: 27%;
+}
+.footer__svg-wrap-second {
+  position: absolute;
+  top: 36%;
+  left: 24%;
+}
+.footer__sub-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer__second-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.footer__desk {
+  margin-bottom: 34px;
+  font-size: 16px;
+}
+.footer__form-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__form-wrapper {
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 16px;
+}
+.footer__checkbox-wrap {
+  display: flex;
+  gap: 10em;
+}
+.footer__input {
+  opacity: 0.6;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 0.875em 8em 0.875em 0.8125em;
+  background: rgba(255, 255, 255, 0.05);
+}
+.footer__second-input {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 0.5em 30.375em 5.875em 0.9375em;
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 22px;
+}
+.footer__check-box {
+  accent-color: #fff;
+  width: 16px;
+  height: 16px;
+}
+.footer__form-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.footer__form-btn {
+  border-radius: 8px;
+  padding: 0.78125em 3.875em;
+  background-color: #fff4f3;
+  color: #ec7973;
+  font-weight: 700;
+  font-size: 16px;
+}
+.footer__second-svg-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.footer__apple {
+  position: absolute;
+  bottom: 0;
+  right: 4%;
+}
+
+@media (max-width: 1500px) {
+  .footer__second-svg-wrap {
+    right: -5%;
+    top: -16%;
+  }
+  .footer__apple {
+    right: -1%;
+  }
+}
+@media (max-width: 1400px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1200px) {
+  .footer__svg-first-wrap {
+    top: 2%;
+  }
+  .footer__svg-second-wrap {
+    left: 15.5%;
+  }
+  .footer__svg-thirds-wrap {
+    left: 13%;
+  }
+  .footer__svg-fors-wrap {
+    left: 11.5%;
+  }
+  .footer__svg-wrap-first {
+    left: 13%;
+  }
+  .footer__svg-wrap-second {
+    left: 10%;
+  }
+  .footer__second-wrap {
+    padding-left: 2%;
+  }
+}
+@media (max-width: 780px) {
+  .footer__form-wrapper {
+    flex-direction: column;
+  }
+  .footer__input {
+    padding: 0.875em 20em 0.875em 0.8125em;
+  }
+  .footer__second-input {
+    padding: 0.5em 20em 5.875em 0.9375em;
+  }
+  .footer__svg-second-wrap {
+    display: none;
+  }
+  .footer__svg-thirds-wrap {
+    display: none;
+  }
+  .footer__svg-fors-wrap {
+    display: none;
+  }
+  .footer__svg-wrap-first {
+    left: 74%;
+    top: 20%;
+  }
+  .footer__svg-wrap-second {
+    left: 72%;
+  }
+  .footer__apple {
+    left: 4%;
+    bottom: 9%;
+  }
+  .footer__second-svg-wrap {
+    right: 0%;
+    top: 77%;
+    rotate: 90deg;
+  }
+  .footer__checkbox-wrap {
+    padding-bottom: 240px;
+  }
+  .footer__meet-amg {
+    width: 80px;
+  }
+  .footer__checkbox-wrap {
+    gap: 5em;
+  }
+}
+@media (max-width: 550px) {
+  .footer__input {
+    padding: 0.875em 13em 0.875em 0.8125em;
+  }
+  .footer__second-input {
+    padding: 0.5em 13em 5.875em 0.9375em;
+  }
+  .footer__checkbox-wrap {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .footer__form-btn {
+    border-radius: 0;
+    padding: 0.78125em 8em;
+  }
+  .footer__svg-first-wrap {
+    right: -5%;
+    rotate: 150deg;
+    top: -8%;
+  }
+  .footer__desk {
+    max-width: 328px;
+  }
+}/*# sourceMappingURL=style.css.map */
