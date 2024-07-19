@@ -113,3 +113,19 @@
 		}
 	}
 }
+@media (max-width: 350px) {
+	.footer {
+		&__input {
+			padding: 0.875em 10em 0.875em 0.8125em;
+		}
+		&__second-input {
+			padding: 0.5em 10em 5.875em 0.9375em;
+		}
+		&__svg-wrap-second {
+			top: 34%;
+		}
+		&__form-btn {
+			padding: 0.78125em 5em;
+		}
+	}
+}

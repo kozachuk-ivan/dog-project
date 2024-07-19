@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Oswald";
   src: url("../../fonts/Oswald-Bold.woff2");
@@ -720,6 +721,15 @@ body {
   padding: 11px 15px;
   margin-top: 16px;
 }
+.footer__btn:hover {
+  background-color: #fff;
+  color: #961914;
+  transition: 0.3s;
+}
+.footer__btn:hover svg {
+  fill: #961914;
+  transition: 0.3s;
+}
 .footer__btn:nth-of-type(2) {
   padding: 12px 25.5px 12.5px 15px;
 }
@@ -782,7 +792,6 @@ body {
 }
 .footer__form-wrap {
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 .footer__form-wrapper {
@@ -792,16 +801,19 @@ body {
 }
 .footer__checkbox-wrap {
   display: flex;
+  justify-content: space-between;
   gap: 10em;
 }
 .footer__input {
+  color: #fff4f3;
   opacity: 0.6;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
-  padding: 0.875em 8em 0.875em 0.8125em;
+  padding: 0.875em 7.9em 0.875em 0.8125em;
   background: rgba(255, 255, 255, 0.05);
 }
 .footer__second-input {
+  color: #fff4f3;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   padding: 0.5em 30.375em 5.875em 0.9375em;
@@ -812,6 +824,16 @@ body {
   accent-color: #fff;
   width: 16px;
   height: 16px;
+  position: relative;
+}
+.footer__check-box::before {
+  content: "Згоден на обробку особистих даних";
+  position: absolute;
+  color: #fff4f3;
+  width: 238px;
+  font-weight: 400;
+  font-size: 12px;
+  left: 150%;
 }
 .footer__form-box {
   display: flex;
@@ -826,6 +848,12 @@ body {
   font-weight: 700;
   font-size: 16px;
 }
+.footer__form-btn:hover {
+  border: #fff4f3 1px solid;
+  transition: 0.3s;
+  background-color: #961914;
+  color: #fff4f3;
+}
 .footer__second-svg-wrap {
   position: absolute;
   top: 0;
@@ -835,6 +863,23 @@ body {
   position: absolute;
   bottom: 0;
   right: 4%;
+}
+.footer__fake-check-box {
+  display: flex;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #fff4f3;
+  border-radius: 2px;
+  border: #fff4f3 0.01px solid;
+  align-items: center;
+  justify-content: center;
+}
+.footer__fake-check-box svg {
+  display: none;
+}
+.footer__check-box:checked + .footer__fake-check-box svg {
+  display: block;
 }
 
 @media (max-width: 1500px) {
@@ -942,5 +987,19 @@ body {
   }
   .footer__desk {
     max-width: 328px;
+  }
+}
+@media (max-width: 350px) {
+  .footer__input {
+    padding: 0.875em 10em 0.875em 0.8125em;
+  }
+  .footer__second-input {
+    padding: 0.5em 10em 5.875em 0.9375em;
+  }
+  .footer__svg-wrap-second {
+    top: 34%;
+  }
+  .footer__form-btn {
+    padding: 0.78125em 5em;
   }
 }/*# sourceMappingURL=style.css.map */

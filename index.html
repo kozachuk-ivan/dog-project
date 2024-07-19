@@ -132,7 +132,12 @@
 							Завжди можете зв'язатися з нами за номером телефону або через
 							месенджери.
 						</p>
-						<p class="footer__tell">+38 (044) 123 45 67</p>
+						<a
+							href="tel:+38 (044) 123 45 67"
+							class="footer__tell"
+						>
+							+38 (044) 123 45 67
+						</a>
 
 						<button class="footer__btn">
 							<svg
@@ -275,69 +280,68 @@
 					<p class="footer__desk">
 						Напишіть нам, і ми обов'язково подробно на них відповімо.
 					</p>
-					<div class="footer__form-wrap">
+					<form class="footer__form-wrap">
 						<div class="footer__form-wrapper">
-							<form
-								action="#"
-								class="footer__form"
-							>
-								<label>
-									<input
-										class="footer__input"
-										type="text"
-										name="name"
-										placeholder="Ім'я"
-									/>
-								</label>
-							</form>
-							<form
-								action="#"
-								class="footer__form"
-							>
-								<label>
-									<input
-										class="footer__input"
-										type="email"
-										name="email"
-										placeholder="Email"
-									/>
-								</label>
-							</form>
-						</div>
-						<form
-							action="#"
-							class="footer__second-form"
-						>
 							<label>
 								<input
-									class="footer__second-input"
+									class="footer__input"
 									type="text"
-									name="question"
-									placeholder="Ваше запитання..."
+									name="name"
+									placeholder="Ім'я"
 								/>
 							</label>
-						</form>
-						<div class="footer__checkbox-wrap">
-							<form
-								action="#"
-								class="footer__form-box"
-							>
+
+							<label>
 								<input
-									type="checkbox"
-									class="footer__check-box"
-									name="data"
-									value="data"
+									class="footer__input"
+									type="email"
+									name="email"
+									placeholder="Email"
 								/>
-								<label
-									for="data"
-									class="footer__label"
+							</label>
+						</div>
+
+						<label>
+							<input
+								class="footer__second-input"
+								type="text"
+								name="question"
+								placeholder="Ваше запитання..."
+							/>
+						</label>
+
+						<div class="footer__checkbox-wrap">
+							<input
+								type="checkbox"
+								class="footer__check-box"
+								name="data"
+								value="data"
+							/>
+							<span class="footer__fake-check-box">
+								<svg
+									width="11"
+									height="9"
+									viewBox="0 0 11 9"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
 								>
-									Згоден на обробку особистих даних
-								</label>
-							</form>
+									<path
+										d="M1.01152 4.31573L4.0216 7.08496L9.03841 1.08496"
+										stroke="#961914"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</span>
+							<label
+								for="data"
+								class="footer__label"
+							></label>
 							<button class="footer__form-btn">Надіслати</button>
 						</div>
-					</div>
+					</form>
+
 					<div class="footer__second-svg-wrap">
 						<svg
 							width="228"
