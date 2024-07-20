@@ -1,0 +1,39 @@
+@media (max-width: 1075px) {
+  .zoov {
+    &__text {
+      display: none;
+    }
+    &__title-wrap {
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 990px) {
+  .zoov {
+    &__col {
+      flex: calc(50% - 13px);
+    }
+    &__desc-wrap {
+      gap: 50px;
+      padding: 54px 42px;
+    }
+  }
+}
+@media (max-width: 636px) {
+  .zoov {
+    &__desc-wrap {
+      padding: 32px 24px;
+      flex-direction: column;
+      gap: 24px;
+    }
+    &__desc {
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 1220px) {
+  .zoov {
+    &__desc-col {
+    }
+  }
+}
