@@ -1,0 +1,135 @@
+@media (max-width: 1500px) {
+	.footer {
+		&__second-svg-wrap {
+			right: -5%;
+			top: -16%;
+		}
+		&__apple {
+			right: -1%;
+		}
+	}
+}
+@media (max-width: 1400px) {
+	.footer {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media (max-width: 1200px) {
+	.footer {
+		&__svg-first-wrap {
+			top: 2%;
+		}
+		&__svg-second-wrap {
+			left: 15.5%;
+		}
+		&__svg-thirds-wrap {
+			left: 13%;
+		}
+		&__svg-fors-wrap {
+			left: 11.5%;
+		}
+		&__svg-wrap-first {
+			left: 13%;
+		}
+		&__svg-wrap-second {
+			left: 10%;
+		}
+		&__second-wrap {
+			padding-left: 2%;
+		}
+	}
+}
+@media (max-width: 780px) {
+	.footer {
+		&__form-wrapper {
+			flex-direction: column;
+		}
+		&__input {
+			padding: 0.875em 20em 0.875em 0.8125em;
+		}
+		&__second-input {
+			padding: 0.5em 20em 5.875em 0.9375em;
+		}
+		&__svg-second-wrap {
+			display: none;
+		}
+		&__svg-thirds-wrap {
+			display: none;
+		}
+		&__svg-fors-wrap {
+			display: none;
+		}
+		&__svg-wrap-first {
+			left: 74%;
+			top: 20%;
+		}
+		&__svg-wrap-second {
+			left: 72%;
+		}
+		&__apple {
+			left: 4%;
+			bottom: 9%;
+		}
+		&__second-svg-wrap {
+			right: 0%;
+			top: 77%;
+			rotate: 90deg;
+		}
+		&__checkbox-wrap {
+			padding-bottom: 240px;
+		}
+		&__meet-amg {
+			width: 80px;
+		}
+		&__checkbox-wrap {
+			gap: 5em;
+		}
+	}
+}
+@media (max-width: 550px) {
+	.footer {
+		&__input {
+			padding: 0.875em 13em 0.875em 0.8125em;
+		}
+		&__second-input {
+			padding: 0.5em 13em 5.875em 0.9375em;
+		}
+		&__checkbox-wrap {
+			flex-direction: column;
+			gap: 2em;
+		}
+		&__form-btn {
+			border-radius: 0;
+			padding: 0.78125em 8em;
+		}
+		&__svg-first-wrap {
+			right: -5%;
+			rotate: 150deg;
+			top: -8%;
+		}
+		&__desk {
+			max-width: 328px;
+		}
+	}
+}
+@media (max-width: 350px) {
+	.footer {
+		&__input {
+			padding: 0.875em 10em 0.875em 0.8125em;
+		}
+		&__second-input {
+			padding: 0.5em 10em 5.875em 0.9375em;
+		}
+		&__svg-wrap-second {
+			top: 34%;
+		}
+		&__form-btn {
+			padding: 0.78125em 5em;
+			margin: 0 1em;
+		}
+		&__second-wrap {
+			padding-left: 0%;
+		}
+	}
+}

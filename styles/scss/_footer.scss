@@ -1,0 +1,204 @@
+.footer {
+	position: relative;
+	display: flex;
+
+	background-color: #961914;
+	margin-top: 90px;
+
+	padding-top: 80px;
+	&__first-wrap {
+		margin-left: 10%;
+		margin-right: 13%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: clamp(40px, 4vw, 46px);
+		font-family: $second-family;
+		margin-bottom: 35px;
+	}
+	&__text {
+		font-size: 16px;
+		max-width: 303px;
+		margin-bottom: 20px;
+	}
+	&__tell {
+		font-weight: 700;
+		margin-bottom: 8px;
+	}
+	&__btn {
+		align-items: center;
+		display: flex;
+		gap: 8.5px;
+		border-radius: 8px;
+		background: rgba(255, 255, 255, 0.15);
+		padding: 11px 15px;
+		margin-top: 16px;
+		&:hover {
+			background-color: #fff;
+			color: #961914;
+			transition: 0.3s;
+		}
+		&:hover svg {
+			fill: #961914;
+			transition: 0.3s;
+		}
+		&:nth-of-type(2) {
+			padding: 12px 25.5px 12.5px 15px;
+		}
+	}
+	&__hgroup {
+		margin-bottom: 40px;
+	}
+	&__link {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 95.5%;
+			height: 1px;
+			background-color: #fff;
+			bottom: -1px;
+		}
+	}
+	&__svg-first-wrap {
+		position: absolute;
+		left: -0%;
+		top: 19%;
+	}
+	&__svg-second-wrap {
+		position: absolute;
+		top: 35%;
+		left: 28.5%;
+	}
+	&__svg-thirds-wrap {
+		position: absolute;
+		top: 35.9%;
+		left: 27%;
+	}
+	&__svg-fors-wrap {
+		position: absolute;
+		top: 37.6%;
+		left: 25.5%;
+	}
+	&__svg-wrap-first {
+		position: absolute;
+		top: 10%;
+		left: 27%;
+	}
+	&__svg-wrap-second {
+		position: absolute;
+		top: 36%;
+		left: 24%;
+	}
+	&__sub-title {
+		font-weight: 600;
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	&__second-wrap {
+		display: flex;
+		flex-direction: column;
+	}
+	&__desk {
+		margin-bottom: 34px;
+		font-size: 16px;
+	}
+	&__form-wrap {
+		display: flex;
+
+		flex-direction: column;
+	}
+	&__form-wrapper {
+		display: flex;
+		gap: 1.5em;
+		margin-bottom: 16px;
+	}
+	&__checkbox-wrap {
+		display: flex;
+		justify-content: space-between;
+		gap: 10em;
+	}
+
+	&__input {
+		color: #fff;
+		opacity: 0.6;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-radius: 8px;
+		padding: 0.875em 7.9em 0.875em 0.8125em;
+		background: rgba(255, 255, 255, 0.05);
+	}
+	&__second-input {
+		color: #fff;
+		opacity: 0.6;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-radius: 8px;
+		padding: 0.5em 30.375em 5.875em 0.9375em;
+		background: rgba(255, 255, 255, 0.05);
+		margin-bottom: 22px;
+	}
+	&__check-box {
+		accent-color: #fff;
+		width: 16px;
+		height: 16px;
+		position: relative;
+
+		&::before {
+			content: "Згоден на обробку особистих даних";
+			position: absolute;
+			color: #fff4f3;
+			width: 238px;
+			font-weight: 400;
+			font-size: 12px;
+			left: 150%;
+		}
+	}
+	&__form-box {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+	}
+	&__form-btn {
+		border-radius: 8px;
+		padding: 0.78125em 3.875em;
+		background-color: #fff4f3;
+		color: #ec7973;
+		font-weight: 700;
+		font-size: 16px;
+		&:hover {
+			border: #fff4f3 1px solid;
+			transition: 0.3s;
+			background-color: #961914;
+			color: #fff4f3;
+		}
+	}
+	&__second-svg-wrap {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	&__apple {
+		position: absolute;
+		bottom: 0;
+		right: 4%;
+	}
+	&__fake-check-box {
+		display: flex;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		background-color: #fff4f3;
+		border-radius: 2px;
+		border: #fff4f3 0.01px solid;
+		align-items: center;
+		justify-content: center;
+		& svg {
+			display: none;
+		}
+	}
+	&__check-box:checked + &__fake-check-box svg {
+		display: block;
+	}
+}
