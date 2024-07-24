@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.img__wrap {
+  line-height: 0;
+  position: relative;
+  overflow: hidden;
+}
+
 @font-face {
   font-family: "Oswald";
   src: url("../../fonts/Oswald-Bold.woff2");
@@ -805,7 +811,7 @@ body {
   gap: 10em;
 }
 .footer__input {
-  color: #fff4f3;
+  color: #fff;
   opacity: 0.6;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
@@ -813,7 +819,8 @@ body {
   background: rgba(255, 255, 255, 0.05);
 }
 .footer__second-input {
-  color: #fff4f3;
+  color: #fff;
+  opacity: 0.6;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   padding: 0.5em 30.375em 5.875em 0.9375em;
@@ -1001,5 +1008,187 @@ body {
   }
   .footer__form-btn {
     padding: 0.78125em 5em;
+    margin: 0 1em;
+  }
+  .footer__second-wrap {
+    padding-left: 0%;
+  }
+}
+.zoov__title-wrap {
+  display: flex;
+  gap: 0 7.4375em;
+  margin-bottom: 4.625em;
+  align-items: center;
+}
+.zoov__col-wrap {
+  display: flex;
+  margin-bottom: 4.375em;
+  gap: 1.625em;
+  flex-wrap: wrap;
+}
+.zoov__col {
+  flex: 1 1 0;
+  flex-grow: 1;
+}
+.zoov__desc-wrap {
+  position: relative;
+  display: flex;
+  padding: 52px 54px 50px;
+  background: #ead1d0;
+  margin-bottom: 11.25em;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9.4375em;
+}
+.zoov__desc-wrap::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 1%;
+  background-image: url(../../img/zoov-section-photo/zoov.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 104%;
+  height: 100%;
+  z-index: 1;
+}
+.zoov__img-wrap {
+  position: relative;
+  padding-bottom: 119.6428%;
+  display: block;
+  margin-bottom: 2.1875em;
+}
+.zoov img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.zoov__svg {
+  position: absolute;
+  left: 1.375em;
+  top: 1.375em;
+}
+.zoov__third-svg {
+  left: 0.0625em;
+  top: 7.4375em;
+}
+.zoov__title {
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 46px);
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #000;
+  min-width: 7.2916666667em;
+}
+.zoov__like {
+  z-index: 1;
+  position: relative;
+}
+.zoov__like::before {
+  content: "";
+  position: absolute;
+  left: -17%;
+  bottom: -8%;
+  background-image: url(../../img/zoov-section-photo/zoov-svg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 142%;
+  height: 116%;
+  z-index: -1;
+}
+.zoov__text {
+  line-height: 140%;
+  color: #000;
+}
+.zoov__subtitle {
+  font-weight: 700;
+  line-height: 130%;
+  color: #000;
+  margin-bottom: 0.25em;
+}
+.zoov__desc-col1 {
+  margin-bottom: 1em;
+}
+.zoov__desc-col2 {
+  margin-bottom: 1.5em;
+}
+.zoov__desc-col {
+  font-size: clamp(6px, 5vw, 13px);
+  line-height: 130%;
+  color: #9f9e9d;
+}
+.zoov__text-col {
+  font-size: clamp(7px, 5vw, 14px);
+  line-height: 140%;
+  color: #434242;
+  margin-bottom: 11px;
+}
+.zoov__btn-col {
+  border: 1px solid #961914;
+  border-radius: 8px;
+  padding: 13px 42px;
+  width: 168px;
+  height: 48px;
+  font-weight: 600;
+  line-height: 140%;
+  text-align: center;
+  color: #961914;
+  text-transform: capitalize;
+}
+.zoov__btn-col:hover {
+  color: #fff;
+  background: #961914;
+  transition: 0.3s;
+}
+.zoov__desc {
+  font-weight: 500;
+  font-size: clamp(20px, 5vw, 28px);
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #000;
+}
+.zoov__btn {
+  border-radius: 8px;
+  padding: 13px 42px;
+  background: #961914;
+  z-index: 1;
+}
+.zoov__btn:hover {
+  color: #961914;
+  background: #fff;
+  transition: 0.3s;
+}
+
+@media (max-width: 1075px) {
+  .zoov__text {
+    display: none;
+  }
+  .zoov__title-wrap {
+    justify-content: center;
+  }
+}
+@media (max-width: 990px) {
+  .zoov__col {
+    flex: calc(50% - 13px);
+  }
+  .zoov__desc-wrap {
+    gap: 50px;
+    padding: 54px 42px;
+  }
+}
+@media (max-width: 636px) {
+  .zoov__desc-wrap {
+    padding: 32px 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .zoov__desc {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
